@@ -13,28 +13,27 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/guacamoleb/device.mk)
 
 # Inherit some common Infinity stuff.
-$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := infinity_guacamoleb
+PRODUCT_NAME := lineage_guacamoleb
 PRODUCT_DEVICE := guacamoleb
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_MODEL := GM1901
 PRODUCT_BRAND := OnePlus
 
-# Infinity-X Specific Flags
-INFINITY_BUILD_TYPE := OFFICIAL
-INFINITY_MAINTAINER := "HARISH"
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_SUPPORTS_BLUR := true
-TARGET_HAS_UDFPS := true
-
 # Exclude Aperture in favor of OnePlus Camera
 PRODUCT_NO_CAMERA := true
 
-# Gapps
-WITH_GAPPS := true
+# Lunaris Flags
+LUNARIS_BUILD_TYPE := UNOFFICIAL
+TARGET_BOOT_ANIMATION_RES := 1080
+WITH_GMS := true
+WITH_BCR := true
+TARGET_CUSTOM_UDFPS := true
+TARGET_OPTIMIZED_DEXOPT := true
 
+# GAPPS PROPERTIES
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \

@@ -567,4 +567,10 @@
         <item>99</item>   <!-- <item>sensorRadius</item> -->
     </integer-array>
 
+    <!-- System Info -->
+    <integer name="config_sysCPUTempMultiplier">1000</integer>
+
+    <!-- Whether the device supports Smart Pixels -->
+    <bool name="config_supportSmartPixels">true</bool>
+
 </resources>
