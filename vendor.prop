@@ -14,3 +14,7 @@ vendor.sensors.als_correction.sensor_inverse_gain=0.472747 0.206944 0.117592 0.0
 
 # Bluetooth
 bluetooth.device.default_name=OnePlus 7
+
+# Smooth Scroll
+persist.sys.perf.scroll_opt=true
+persist.sys.perf.scroll_opt.heavy_app=2
